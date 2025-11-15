@@ -1,0 +1,150 @@
+header,footer{
+background: linear-gradient(to left, #ddb813,#e93a13);
+padding: 20px;
+color: aliceblue;
+border-radius: 2px;
+margin: 0px;
+font-family: "poppins", sans-serif;
+font-weight: 250;
+text-align: center;
+      }
+
+footer{
+        background: linear-gradient(to right, #ddb813,#e93a13);
+}
+
+.h_h1{
+    text-shadow: 3px 1px rgb(0, 0, 0);
+     }
+
+hr{
+    width: 50%;
+    opacity: 35%;
+    color: aquamarine;
+}
+
+body{
+    font-family: "poppins", sans-serif;
+    text-align: center;
+}
+section{
+    padding: 1%;
+ }
+
+.my_image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px black; 
+    transition: transform 0.6s ease;
+    
+}
+.my_image:hover{
+    box-shadow: 0px 0px 50px rgb(245, 241, 4);  
+    transform: scale(1.1);
+}
+
+.linked_logo, .mail_logo{
+height: 50px;
+width: 50px;
+border-radius: 100%;
+margin: 0px 10px;
+transition: transform 0.3s ease;
+}
+
+.mail_logo:hover, .linked_logo:hover {
+    box-shadow: 0px 0px 50px rgb(238, 3, 3);
+    transform: scale(1.1);
+ }
+
+.linked_logo:hover{
+    box-shadow: 0px 0px 50px rgb(100, 119, 244)
+}
+
+.pb_1, .pb_2{
+    padding: 5px;
+    font-family: "poppins";
+    font-weight: 500;
+    color: #ffffff;
+    background: #ea8670;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5%;
+    margin: 0px 20px;
+    border: 1px solid black;
+}
+
+.pb_1:hover, .pb_2:hover {
+    box-shadow: 0px 0px 50px rgb(240, 175, 55);
+ }
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between items */
+}
+
+.skill-box {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    font-weight: 500;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+}
+
+
+form {
+    max-width: 500px; 
+    margin: 20px auto; 
+    padding: 20px;
+    background: linear-gradient(to right,rgb(171, 234, 171), rgb(215, 161, 161)); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; /* Added rounded corners */
+}
+
+
+form input[type="text"],
+form input[type="email"], 
+form textarea {
+    width: calc(100% - 20px); 
+    padding: 12px; 
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none; /* Removes default focus outline */
+    transition: border 0.3s ease-in-out;
+}
+
+
+form input[type="text"]:focus,
+form input[type="email"]:focus, 
+form textarea:focus {
+    border-color: #007bff;
+}
+
+
+form button {
+    background: linear-gradient(to right, rgb(238, 145, 52), rgb(230, 51, 243));
+    color: black;
+    border: 0;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    width: 100%; 
+}
+
+
+form button:hover { 
+    background: #0056b3;
+    color: white;
+}

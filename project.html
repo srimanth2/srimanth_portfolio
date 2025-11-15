@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Sajja Sri Manth</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles_projects.css">
+    <link rel="icon" href="./images/logo.png" type="image/png">
+</head>
+<nav class="navbar">
+    <div class="nav-left">
+        <img src="./images/SAJJA-SRI MANTH.png" alt="Logo" class="nav-logo">
+    </div>
+    <ul class="nav-right">
+        <li><a href="./index.html" class="nav-t">Home</a></li>
+        <li><a href="#contact" class="nav-t">Contact Me</a></li>
+        <li>
+            <a href="./images/resume/sajja srimanth resume.pdf" class="btn resume-btn" download>Download Resume</a>
+        </li>
+        <li>
+            <button  id="dark-mode-toggle" class="dark-mode-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </li>
+    </ul>
+</nav>
+<body>
+
+<header>
+    <h1>My Projects</h1>
+</header>
+
+<section class="project">
+    <h2><i class="fas fa-robot"></i> AI Chatbot</h2>
+    <p>Developed an AI-powered chatbot using Python and NLP techniques.</p>
+    <button class="more-btn" onclick="openModal('modal1')">More Details</button>
+</section>
+
+<hr>
+
+<section class="project">
+    <h2><i class="fas fa-shopping-cart"></i> E-Commerce Website</h2>
+    <p>Built a responsive e-commerce platform with Django.</p>
+    <button class="more-btn" onclick="openModal('modal2')">More Details</button>
+</section>
+
+<hr>
+
+<section class="project">
+    <h2><i class="fas fa-chart-line"></i> Data Analysis with Python</h2>
+    <p>Analyzed datasets using Pandas, NumPy, and Matplotlib.</p>
+    <button class="more-btn" onclick="openModal('modal3')">More Details</button>
+</section>
+
+<hr>
+
+<section class="project">
+    <h2><i class="fas fa-cloud"></i> Cloud-based DevOps Pipeline</h2>
+    <p>Implemented CI/CD pipeline using Jenkins, Docker, and AWS.</p>
+    <button class="more-btn" onclick="openModal('modal4')">More Details</button>
+</section>
+
+<hr>
+
+<section class="project">
+    <h2><i class="fas fa-brain"></i> Deep Learning Model for Stroke Prediction</h2>
+    <p>Developed a deep learning model using TensorFlow and PyTorch.</p>
+    <button class="more-btn" onclick="openModal('modal5')">More Details</button>
+</section>
+
+<footer>
+    <p>&copy; 2025 Sajja Sri Manth. All rights reserved.</p>
+</footer>
+
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <img src="./images/chartbot.png" alt="AI Chatbot">
+        <h2>AI Chatbot</h2>
+        <p>Project Info: AI-powered chatbot for customer support.</p>
+        <p>Description: A chatbot that understands user queries and provides accurate responses.</p>
+        <p>Tools Used: Python, NLP, TensorFlow.</p>
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <img src="./images/e_commerce.png" alt="E-Commerce Website">
+        <h2>E-Commerce Website</h2>
+        <p>Project Info: Online shopping platform with authentication.</p>
+        <p>Description: Users can browse products, add them to a cart, and complete purchases securely.</p>
+        <p>Tools Used: Django, HTML, CSS, JavaScript.</p>
+    </div>
+</div>
+
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <img src="./images/python_data.png" alt="Data Analysis">
+        <h2>Data Analysis with Python</h2>
+        <p>Project Info: Data visualization and insights extraction.</p>
+        <p>Description: Used data science techniques to clean, analyze, and visualize data trends.</p>
+        <p>Tools Used: Pandas, NumPy, Matplotlib.</p>
+    </div>
+</div>
+
+<div id="modal4" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal4')">&times;</span>
+        <img src="./images/cloud.png" alt="DevOps Pipeline">
+        <h2>Cloud-based DevOps Pipeline</h2>
+        <p>Project Info: Automated deployment using CI/CD.</p>
+        <p>Description: Implemented continuous integration and deployment to streamline cloud operations.</p>
+        <p>Tools Used: Jenkins, Docker, AWS.</p>
+    </div>
+</div>
+
+<div id="modal5" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal5')">&times;</span>
+        <img src="./images/Stroke Prediction.png" alt="Deep Learning Model">
+        <h2>Deep Learning Model for Stroke Prediction</h2>
+        <p>Project Info: AI model for early stroke detection.</p>
+        <p>Description: Analyzes patient data to predict stroke risks and assist medical professionals.</p>
+        <p>Tools Used: TensorFlow, PyTorch.</p>
+    </div>
+</div>
+
+<script>
+    function openModal(id) {
+        document.getElementById(id).style.display = 'flex';
+    }
+    function closeModal(id) {
+        document.getElementById(id).style.display = 'none';
+    }
+</script>
+
+</body>
+</html>

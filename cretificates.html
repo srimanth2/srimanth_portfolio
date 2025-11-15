@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Certifications</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .portfolio-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .portfolio-item {
+            background: #fff;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .portfolio-item h3 {
+            color: #333;
+        }
+        .portfolio-item p {
+            color: #666;
+            font-size: 16px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background: #007BFF;
+            color: #fff;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 80%;
+        }
+        .modal-content img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Certifications</h1>
+    <p>Browse through the certifications I have earned in various domains.</p>
+    <div class="portfolio-container">
+        <div class="portfolio-item" onclick="openModal('images/certificate1.png')">
+            <img src="./images/certificate.png" alt="Certificate 1">
+            <h3>Java Full Stack Developer</h3>
+            <p>Earned from TalentNext at Wipro.</p>
+        </div>
+        <div class="portfolio-item" onclick="openModal('images/certificate2.png')">
+            <img src="images/certificate2.png" alt="Certificate 2">
+            <h3>Cloud Computing Fundamentals</h3>
+            <p>Certified in cloud technologies and architectures.</p>
+        </div>
+        <div class="portfolio-item" onclick="openModal('images/certificate3.png')">
+            <img src="images/certificate3.png" alt="Certificate 3">
+            <h3>Cybersecurity Essentials</h3>
+            <p>Recognized for skills in security best practices.</p>
+        </div>
+        <div class="portfolio-item" onclick="openModal('images/certificate4.png')">
+            <img src="images/certificate4.png" alt="Certificate 4">
+            <h3>Data Science & Machine Learning</h3>
+            <p>Completed advanced coursework in data analysis.</p>
+        </div>
+    </div>
+    <a href="https://drive.google.com/drive/folders/109oDCUDRaPmr-lTzj-22j1mwMeiJSd8G?usp=drive_link" class="btn">View All Certificates</a>
+    
+    <!-- Modal -->
+    <div id="certificateModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="">
+        </div>
+    </div>
+    
+    <script>
+        function openModal(imageSrc) {
+            document.getElementById('modalImage').src = imageSrc;
+            document.getElementById('certificateModal').style.display = 'flex';
+        }
+        function closeModal() {
+            document.getElementById('certificateModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

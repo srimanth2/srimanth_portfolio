@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sajja Sri Manth's Website</title>
+    <meta name="description" content="Personal Profile Page of Sajja Sri Manth">
+    <link rel="icon" href="./images/logo.png" type="image/png">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="port.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="./images/SAJJA-SRI MANTH.png" alt="Logo" class="nav-logo">
+        </div>
+        <ul class="nav-right">
+            <li><a href="./index.html" class="nav-t">Home</a></li>
+            <li><a href="#contact" class="nav-t">Contact Me</a></li>
+            <li>
+                <a href="./images/resume/sajja srimanth resume.pdf" class="btn resume-btn" download>Download Resume</a>
+            </li>
+            <li>
+                <button  id="dark-mode-toggle" class="dark-mode-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <header id="home">
+        <h1>This is Sajja Sri Manth, a <span class="about-me"></span></h1>
+        <p>Welcome to My World!</p> 
+    </header>
+
+<section class="about">
+    <h2>About Me</h2>
+    <img class="my_image" src="./images/srimanth.png" alt="Sajja Sri Manth">
+    <p>Hello! I'm Sajja Sri Manth, passionate about coding, data science, and DevOps.</p>
+    <p>I thrive on solving complex problems with innovative solutions, always eager to learn and apply new technologies. With a strong foundation in programming and automation, I enjoy working on projects that bridge the gap between development and operations, making systems more efficient and scalable.</p>
+</section>
+
+<hr>
+
+<section class="portfolio">
+    <h2>Portfolio</h2>
+    <p class=" p_p">Take a look at some of my works.</p>
+    <div class="portfolio-container">
+        <div class="portfolio-item">
+            <img  src="images/project.png" alt="Certificates">
+            <h3>My Projects</h3>
+            <p>Explore a collection of projects showcasing my skills in software development, data science, and innovative solutions.</p>
+            <a href="./project.html" class="btn">View Projects</a>
+        </div>
+        <div class="portfolio-item">
+            <img src="images/certificate.png" alt="Certificates">
+            <h3>Certificates</h3>
+            <p>Browse through the certifications I have earned in various domains, including programming, cloud computing, and cybersecurity.</p>
+            <a href="./cretificates.html" class="btn">View Certificates</a>
+        </div>
+        <div class="portfolio-item">
+            <img src="images/paper.png" alt="Certificates">
+            <h3>Paper Publications</h3>
+            <p>Read my research papers and articles published in reputed journals, covering topics such as AI, machine learning, and technology trends.</p>
+            <a href="https://www.ijcrt.org/papers/IJCRT2501398.pdf" class="btn">View Papers</a>
+        </div>
+    </div>
+</section>
+
+
+<hr>
+
+<section class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+        <div class="skill-box">C, Python, Java</div>
+        <div class="skill-box">JavaScript, HTML, CSS</div>
+        <div class="skill-box">Spring, Hibernate</div>
+        <div class="skill-box">MySQL, Databases</div>
+        <div class="skill-box">Git, Jenkins, AWS</div>
+    </div>
+</section>
+
+<section class="horizontal-scroll">
+<div class="icon-container" >
+<img src="./images/c_prog.png" alt="Icon 1">
+<img src="./images/pyhon.png" alt="Icon 2" >
+<img src="./images/java.png" alt="Icon 3" >
+<img src="./images/javascript.png" alt="Icon 4">
+<img src="./images/html.webp" alt="Icon 5">
+<img src="./images/css.png" alt="Icon 6">
+<img src="./images/sql.png"alt="Icon 7">
+<img src="./images/git.png" alt="Icon 8">
+<img src="./images/aws.png" alt="Icon 9">
+<img src="./images/jenk.jpeg" alt="Icon 9">
+</div>
+</section ><hr>
+<section id="programming-languages">
+    <h2>Programming Languages</h2>
+    <div class="skill">
+        <p>JavaScript</p>
+        <div class="progress-bar" data-progress="80"></div>
+    </div>
+    <div class="skill">
+        <p>HTML</p>
+        <div class="progress-bar" data-progress="90"></div>
+    </div>
+    <div class="skill">
+        <p>CSS</p>
+        <div class="progress-bar" data-progress="100"></div>
+    </div>
+</section>
+<hr>
+<section id="contact" class="contact-form">
+    <h2>Contact Me</h2>
+    <form>
+        <label class="name" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Write your message"></textarea>
+        
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<hr>
+
+<section class="contact">
+    <h2>Contact Information</h2>
+    <p>Let's connect!</p>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/srimanth-sajja-8ab42826a">
+            <img src="./images/linkedin.png" alt="LinkedIn"></a>
+        <a href="mailto:ssrimanth1234@gmail.com">
+            <img src="./images/mail_logo.png" alt="Email"></a>
+    </div>
+</section>
+<footer>
+    <p>&copy; 2025 Sajja Sri Manth. All rights reserved.</p>
+</footer>
+</body>
+</html>
